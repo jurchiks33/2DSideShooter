@@ -26,3 +26,9 @@ playere_velocity_y = 0
 running = True
 while running:
     screen.fill(BG_COLOR)
+
+#Event handling.
+    for event in pygame.event.get():
+        if event.type == pygame.QUIT:
+            running == False
+
