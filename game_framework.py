@@ -20,7 +20,7 @@ player_x = SCREEN_WIDTH // 2
 player_y = SCREEN_HEIGHT - PLAYER_SIZE
 player_speed = 5
 player_jump = False
-playere_velocity_y = 0
+player_velocity_y = 0
 
 #Game loop
 running = True
@@ -44,4 +44,9 @@ if not player_jump:
     if keys[pygame.K_SPACE]:
         player_jump = True
         player_velocity_y = -JUMP_STRENGTH
-
+else:
+    player_velocity_y += GRAVITY
+    player_y += player_velocity_y
+    if player_y >= SCREEN_HEIGHT - PLAYER_SIZE:
+        player_y = SCREEN_HEIGHT - PLAYER_SIZE
+        player_jump = False
