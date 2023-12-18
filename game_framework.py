@@ -50,3 +50,9 @@ else:
     if player_y >= SCREEN_HEIGHT - PLAYER_SIZE:
         player_y = SCREEN_HEIGHT - PLAYER_SIZE
         player_jump = False
+
+# Draw the player
+pygame.draw.rect(screen, PLAYER_COLOR, (player_x, player_y,
+                                         PLAYER_SIZE, PLAYER_SIZE))
+
+pygame.display.flip()
