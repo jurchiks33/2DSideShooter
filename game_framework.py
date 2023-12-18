@@ -15,3 +15,10 @@ JUMP_STRENGTH = 10
 screen = pygame.display.set_mode((SCREEN_WIDTH, SCREEN_HEIGHT))
 pygame.display.set_caption("2D Side Shooter")
 
+#Player properties.
+player_x = SCREEN_WIDTH // 2
+player_y = SCREEN_HEIGHT - PLAYER_SIZE
+player_speed = 5
+player_jump = False
+playere_velocity_y = 0
+
