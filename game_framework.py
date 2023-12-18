@@ -38,3 +38,10 @@ if keys[pygame.K_LEFT]:
     player_x -= player_speed
 if keys[pygame.K_RIGHT]:
     player_x += player_speed
+
+# Player jump logic
+if not player_jump:
+    if keys[pygame.K_SPACE]:
+        player_jump = True
+        player_velocity_y = -JUMP_STRENGTH
+
