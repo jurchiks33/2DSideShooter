@@ -22,3 +22,7 @@ player_speed = 5
 player_jump = False
 playere_velocity_y = 0
 
+#Game loop
+running = True
+while running:
+    screen.fill(BG_COLOR)
