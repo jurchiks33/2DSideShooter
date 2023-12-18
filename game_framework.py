@@ -32,3 +32,9 @@ while running:
         if event.type == pygame.QUIT:
             running == False
 
+#Player movement.
+keys = pygame.key.get_pressed()
+if keys[pygame.K_LEFT]:
+    player_x -= player_speed
+if keys[pygame.K_RIGHT]:
+    player_x += player_speed
