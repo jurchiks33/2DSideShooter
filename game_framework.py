@@ -10,3 +10,8 @@ PLAYER_COLOR = (255, 0, 0)
 PLAYER_SIZE = 50
 GRAVITY = 0.5
 JUMP_STRENGTH = 10
+
+#Display Setup.
+screen = pygame.display.set_mode((SCREEN_WIDTH, SCREEN_HEIGHT))
+pygame.display.set_caption("2D Side Shooter")
+
