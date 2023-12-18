@@ -56,3 +56,10 @@ pygame.draw.rect(screen, PLAYER_COLOR, (player_x, player_y,
                                          PLAYER_SIZE, PLAYER_SIZE))
 
 pygame.display.flip()
+
+# Cap the frame rate
+pygame.time.Clock().tick(60)
+
+# Quit Pygame
+pygame.quit()
+sys.exit()
